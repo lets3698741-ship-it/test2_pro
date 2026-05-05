@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:wght@400;700&family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+body {
+  background-color: #383840;
+}
+.head {
+  background-color: #383840;
+}
+.foot {
+  background-color: #383840;
+}
+.left p {
+  color: #d99544;
+}
+.search hr {
+  height: 30px;
+  width: 1px;
+  background: white;
+  border: none;
+}
+.links a {
+  text-decoration: none;
+  color: white;
+  white-space: nowrap;
+}
+.right a {
+  text-decoration: none;
+  color: white;
+}
+h1 {
+  font-family: "Newsreader", serif;
+  font-size: 5rem;
+  font-weight: 400;
+}
+h2 {
+  font-family: "Newsreader", serif;
+  font-size: 3.813rem;
+  font-weight: 400;
+}
+h3 {
+  font-family: "Newsreader", serif;
+  font-size: 2.938rem;
+  font-weight: 400;
+}
+h4 {
+  font-family: "Newsreader", serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+h5 {
+  font-family: "Newsreader", serif;
+  font-size: 1.688rem;
+  font-weight: 700;
+}
+h6 {
+  font-family: "Newsreader", serif;
+  font-size: 1.313rem;
+  font-weight: 400;
+}
+
+/* Special */
+.sub-h5 {
+  font-family: "Newsreader", serif;
+  font-size: 1.313rem;
+  font-weight: 400;
+}
+
+.base-newsreader {
+  font-family: "Newsreader", serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.base-poppins {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.weighted-caption {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.caption {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #f0f0f0;
+  margin: 0;
+}
+
+p,
+.sub-h5,
+.base-newsreader,
+.base-poppins,
+.weighted-caption,
+.caption {
+  color: #c3c3c4;
+  margin: 0;
+}
+
+main {
+  text-align: center;
+  align-items: center;
+}
+
+section {
+  padding-bottom: 64px;
+}
+
+.Our-origin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+
+.Our-origin div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.team {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.role {
+  color: #f1c477;
+}
+
+.team-grid {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 24px;
+  row-gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.member-card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 16px;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+}
+.logo img,
+.endimg {
+  filter: brightness(0) invert(1);
+}

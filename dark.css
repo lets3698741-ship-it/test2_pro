@@ -1,0 +1,154 @@
+body {
+  background-color: #383840;
+}
+
+.links a {
+  color: white;
+}
+.right a {
+  color: white;
+}
+main {
+  margin: 0;
+  font-family: lucida;
+  font-weight: 100;
+  line-height: 1.6;
+  color: #383840;
+}
+.left p {
+  color: #d99544;
+}
+a {
+  text-decoration: none;
+  color: rgb(248, 207, 130);
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  background: rgb(248, 207, 130);
+  color: #fff;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: #555555;
+  transition: 0.3s;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
+  color: #fff;
+}
+
+.nav-icons span {
+  margin-left: 10px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: #494957;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.collections {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background-image: linear-gradient(#494957, #373741);
+}
+.collection h2 {
+  color: #fff;
+}
+
+.collection {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 6px;
+  border-color: #494957;
+  width: 40%;
+  background-image: linear-gradient(#494957, #373741);
+}
+
+.new-arrivals {
+  padding: 40px 20px;
+  color: #fff;
+  background-image: linear-gradient(#373741, #28282e);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: #494957;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.card h3 {
+  margin: 10px 0;
+  color: #fff;
+}
+
+.card p {
+  color: #fff;
+}
+
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.card:hover {
+  transform: translateY(-6px);
+  border-color: #d99544;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+.logo img,
+.endimg {
+  filter: brightness(0) invert(1);
+}

@@ -1,0 +1,730 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fbf4ec;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.head {
+    width: 100%;
+    min-height: 136px;
+    padding: 0 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 21px;
+    font-family: 'Newsreader';
+    margin-bottom: 40px;
+    background-color: white;
+}
+
+.logo {
+    flex-shrink: 0;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.logo img {
+    width: 112px;
+    height: auto;
+    padding-top: 20px;
+}
+
+.links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    font-weight: bold;
+    font-family: "Newsreader", serif;
+    font-size: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #595856;
+    white-space: nowrap;
+}
+
+.links a:hover,
+.links a:active,
+.links .act {
+    color: #D99544;
+}
+
+.bu {
+    width: 1px;
+}
+
+.search {
+    flex-shrink: 0;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    color: #434241;
+}
+
+.search a {
+    text-decoration: none;
+}
+
+.search a img {
+    width: 30px;
+}
+
+.li,
+.ri {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search hr {
+    height: 30px;
+    width: 1px;
+    background: black;
+    border: none;
+}
+
+main {
+    min-height: auto;
+}
+
+.c {
+    width: calc(100% - 128px);
+    margin: auto;
+}
+
+.foot {
+    width: 100%;
+    padding: 30px 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left img {
+    width: 112px;
+    height: auto;
+}
+
+.left p {
+    margin: 0;
+    color: #543B25;
+    font-family: 'Poppins';
+    font-size: 15px;
+}
+
+.right {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.right a {
+    text-decoration: none;
+    color: gray;
+}
+
+@media (max-width: 1024px) {
+    .head { padding: 25px 30px; gap: 15px; }
+    .links { gap: 20px; font-size: 18px; }
+    .search a img { width: 25px; }
+    .foot { padding: 25px 30px; }
+    .c { width: calc(100% - 60px); }
+}
+
+@media (max-width: 768px) {
+    .head { flex-direction: column; justify-content: center; text-align: center; padding: 25px 20px; }
+    .logo { padding-bottom: 0; }
+    .links { flex-wrap: wrap; gap: 15px; font-size: 17px; }
+    .search { gap: 15px; }
+    .foot { flex-direction: column; text-align: center; gap: 20px; }
+    .right { justify-content: center; }
+    .c { width: calc(100% - 40px); }
+}
+
+
+/* account light */
+body.account-page {
+    --bg: #f3f2f0;
+    --surface: #ffffff;
+    --text: #26231f;
+    --heading: #161412;
+    --soft-color: #6d6a66;
+    --label: #5d5750;
+    --line: #d6d0ca;
+    --soft-line: rgba(90, 79, 67, 0.14);
+    --main-color: #df9a3f;
+    --main-dark: #bb7933;
+    --input-bg: #ffffff;
+    --input-text: #26231f;
+    --input-border: #d9d4cf;
+    --button-border: #56524c;
+    --toggle-bg: #55514c;
+    --glass: rgba(255, 255, 255, 0.6);
+    --preview-light: #ebe5de;
+    --preview-dark: #b3aba1;
+    --account-visual-top: #efefef;
+    --account-visual-bottom: #5e5d5c;
+    --footer-text: #543b25;
+    --shadow: 0 24px 70px rgba(49, 45, 40, 0.12);
+}
+
+body.account-page * {
+    box-sizing: border-box;
+}
+
+body.account-page {
+    scroll-behavior: smooth;
+    min-height: 100vh;
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    justify-content: space-between;
+}
+
+body.account-page img {
+    display: block;
+    max-width: 100%;
+}
+
+body.account-page a {
+    color: inherit;
+}
+
+body.account-page .head {
+    width: 100%;
+    min-height: 112px;
+    padding: 24px 64px;
+    margin-bottom: 0;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    font-family: "Newsreader", serif;
+}
+
+body.account-page .logo {
+    width: 112px;
+    flex: 0 0 auto;
+    overflow: visible;
+    padding-bottom: 0;
+}
+
+body.account-page .logo img {
+    width: 100%;
+    height: auto;
+    padding-top: 0;
+}
+
+body.account-page .links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+body.account-page .links a {
+    text-decoration: none;
+    color: var(--soft-color);
+    white-space: nowrap;
+    transition: color 0.2s ease;
+}
+
+body.account-page .links a:hover,
+body.account-page .links .act {
+    color: var(--main-color);
+}
+
+body.account-page .search,
+body.account-page .li,
+body.account-page .ri {
+    display: flex;
+    align-items: center;
+}
+
+body.account-page .search {
+    flex: 0 0 auto;
+    gap: 18px;
+}
+
+body.account-page .li {
+    gap: 15px;
+}
+
+body.account-page .theme-btn {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+
+body.account-page .theme-btn.active {
+    background: transparent;
+}
+
+body.account-page .theme-btn img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+body.account-page .ri {
+    gap: 18px;
+}
+
+body.account-page .ri img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+body.account-page .divider {
+    width: 1px;
+    height: 32px;
+    background: var(--line);
+}
+
+body.account-page .home-main {
+    width: 1180px;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 36px 0 80px;
+}
+
+body.account-page .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+    min-height: 560px;
+}
+
+body.account-page .eyebrow {
+    margin: 0 0 14px;
+    color: var(--main-color);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+body.account-page .hero h1,
+body.account-page .account-panel h1 {
+    margin: 0;
+    font-family: "Newsreader", serif;
+    font-weight: 700;
+    line-height: 1.03;
+    color: var(--heading);
+}
+
+body.account-page .hero h1 {
+    max-width: 660px;
+    font-size: 92px;
+}
+
+body.account-page .lead {
+    max-width: 600px;
+    margin: 22px 0 0;
+    color: var(--soft-color);
+    font-size: 22px;
+    line-height: 1.55;
+}
+
+body.account-page .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 32px;
+}
+
+/* ===== buttons ===== */
+body.account-page .primary-btn,
+body.account-page .secondary-btn,
+body.account-page .google-btn {
+    min-height: 48px;
+    padding: 0 28px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+body.account-page .primary-btn {
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
+    color: #ffffff;
+}
+
+body.account-page .secondary-btn,
+body.account-page .google-btn {
+    border: 1px solid var(--button-border);
+    background: transparent;
+    color: var(--text);
+}
+
+body.account-page .primary-btn:hover,
+body.account-page .secondary-btn:hover,
+body.account-page .google-btn:hover {
+    transform: translateY(-1px);
+}
+
+body.account-page .primary-btn:hover {
+    background: var(--main-dark);
+    border-color: var(--main-dark);
+}
+
+body.account-page .book-preview {
+    min-height: 470px;
+    padding: 40px;
+    border-radius: 8px;
+    background:
+        linear-gradient(145deg, rgba(255, 255, 255, 0.18), transparent 42%),
+        linear-gradient(160deg, var(--preview-light), var(--preview-dark));
+    box-shadow: var(--shadow);
+    display: grid;
+    align-content: end;
+    gap: 18px;
+}
+
+body.account-page .book-preview article,
+body.account-page .feature-grid article {
+    border: 1px solid var(--soft-line);
+    background: var(--glass);
+    border-radius: 8px;
+    padding: 22px;
+}
+
+body.account-page .book-preview span {
+    color: var(--main-color);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+body.account-page .book-preview h2,
+body.account-page .feature-grid h2 {
+    margin: 8px 0;
+    font-family: "Newsreader", serif;
+    color: var(--heading);
+}
+
+body.account-page .book-preview p,
+body.account-page .feature-grid p {
+    margin: 0;
+    color: var(--soft-color);
+    line-height: 1.6;
+}
+
+body.account-page .feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px;
+    margin-top: 42px;
+}
+
+body.account-page .account-main {
+    width: 1040px;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 32px 0 96px;
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    align-items: start;
+    gap: 88px;
+    flex: 1;
+}
+
+body.account-page .account-visual {
+    min-height: 560px;
+    border-radius: 8px;
+    background:
+        radial-gradient(circle at 25% 15%, rgba(255, 255, 255, 0.2), transparent 26%),
+        linear-gradient(165deg, var(--account-visual-top), var(--account-visual-bottom));
+    box-shadow: var(--shadow);
+}
+
+body.account-page .account-panel h1 {
+    font-size: 52px;
+}
+
+body.account-page .account-panel > p {
+    margin: 12px 0 34px;
+    color: var(--soft-color);
+    font-size: 17px;
+    line-height: 1.45;
+}
+
+/* ===== Form ===== */
+body.account-page .account-form {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+body.account-page .account-form label:not(.check-row) {
+    color: var(--label);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+body.account-page .account-form input[type="text"],
+body.account-page .account-form input[type="email"],
+body.account-page .account-form input[type="password"] {
+    width: 100%;
+    min-height: 46px;
+    padding: 0 14px;
+    border: 1px solid var(--input-border);
+    background: var(--input-bg);
+    color: var(--input-text);
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    outline: none;
+}
+
+body.account-page .account-form input:focus {
+    border-color: var(--main-color);
+    box-shadow: 0 0 0 3px rgba(223, 154, 63, 0.18);
+}
+
+body.account-page .check-row {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin: 8px 0 6px;
+    color: var(--soft-color);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+body.account-page .check-row.compact {
+    margin: 0;
+}
+
+body.account-page .check-row input {
+    flex: 0 0 auto;
+    accent-color: var(--main-color);
+}
+
+body.account-page .check-row a,
+body.account-page .account-switch a,
+body.account-page .form-row a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+body.account-page .account-submit,
+body.account-page .google-btn {
+    width: 100%;
+}
+
+body.account-page .or-line {
+    position: relative;
+    margin: 22px 0 8px;
+    color: var(--soft-color);
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+body.account-page .or-line::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--line);
+}
+
+body.account-page .or-line span {
+    position: relative;
+    padding: 0 12px;
+    background: var(--bg);
+}
+
+body.account-page .google-btn {
+    min-height: 48px;
+}
+
+body.account-page .google-btn span {
+    font-size: 18px;
+    line-height: 1;
+}
+
+body.account-page .account-switch {
+    margin: 24px 0 0;
+    color: var(--soft-color);
+    font-size: 12px;
+    text-align: center;
+}
+
+body.account-page .form-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    color: var(--soft-color);
+    font-size: 12px;
+    margin: 6px 0 8px;
+}
+
+body.account-page .c {
+    width: calc(100% - 128px);
+    margin: auto auto 0;
+    border: 0;
+    border-top: 1px solid var(--line);
+}
+
+body.account-page .foot {
+    width: 100%;
+    padding: 28px 64px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+body.account-page .left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+body.account-page .left img {
+    width: 112px;
+}
+
+body.account-page .left p {
+    margin: 0;
+    color: var(--footer-text);
+    font-size: 12px;
+}
+
+body.account-page .right {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+body.account-page .right a {
+    color: var(--soft-color);
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* =====  pop up  ===== */
+body.account-page .popup-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    padding: 20px;
+    background: rgba(20, 18, 16, 0.38);
+    display: grid;
+    place-items: center;
+}
+
+body.account-page .popup-box {
+    width: 360px;
+    max-width: 100%;
+    padding: 28px;
+    border: 1px solid var(--soft-line);
+    border-radius: 8px;
+    background: var(--bg);
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+body.account-page .popup-box p {
+    margin: 0 0 20px;
+    color: var(--text);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body.account-page .popup-btn {
+    width: 100%;
+}
+
+/* ===== Responsive===== */
+@media (max-width: 980px) {
+    body.account-page .theme-btn,
+    body.account-page .theme-btn img { width: 25px; height: 25px; }
+    body.account-page .head { flex-wrap: wrap; justify-content: center; padding: 24px 30px; }
+    body.account-page .logo { order: 1; }
+    body.account-page .search { order: 2; margin-left: auto; }
+    body.account-page .links { order: 3; flex-basis: 100%; flex-wrap: wrap; }
+    body.account-page .hero,
+    body.account-page .account-main { grid-template-columns: 1fr; }
+    body.account-page .hero { min-height: auto; gap: 40px; }
+    body.account-page .hero h1 { font-size: 64px; }
+    body.account-page .lead { font-size: 18px; }
+    body.account-page .account-main { width: 680px; max-width: calc(100% - 40px); padding-top: 18px; gap: 40px; }
+    body.account-page .account-visual { min-height: 340px; }
+    body.account-page .feature-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+    body.account-page .head { min-height: auto; padding: 20px; gap: 18px; }
+    body.account-page .logo { width: 96px; }
+    body.account-page .search { width: 100%; justify-content: center; margin-left: 0; order: 3; }
+    body.account-page .links { order: 2; gap: 13px 18px; font-size: 15px; }
+    body.account-page .home-main,
+    body.account-page .account-main { width: calc(100% - 28px); max-width: 680px; }
+    body.account-page .home-main { padding-top: 22px; }
+    body.account-page .hero h1 { font-size: 48px; }
+    body.account-page .lead { font-size: 16px; }
+    body.account-page .hero-actions,
+    body.account-page .form-row { flex-direction: column; align-items: stretch; }
+    body.account-page .primary-btn,
+    body.account-page .secondary-btn { width: 100%; }
+    body.account-page .book-preview,
+    body.account-page .account-visual { min-height: 300px; }
+    body.account-page .account-panel h1 { font-size: 36px; }
+    body.account-page .foot { flex-direction: column; text-align: center; }
+    body.account-page .left { align-items: center; }
+    body.account-page .right { justify-content: center; gap: 12px 18px; }
+}

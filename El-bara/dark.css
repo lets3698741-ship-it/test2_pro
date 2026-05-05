@@ -1,0 +1,52 @@
+body {
+  background-color: #383840;
+}
+.head {
+  background-color: #383840;
+}
+.foot {
+  background-color: #383840;
+}
+.left p {
+  color: #d99544;
+}
+.search hr {
+  height: 30px;
+  width: 1px;
+  background: white;
+  border: none;
+}
+.links a {
+  text-decoration: none;
+  color: white;
+  white-space: nowrap;
+}
+.right a {
+  text-decoration: none;
+  color: white;
+}
+
+.view-details,
+.bookshelf-auther,
+.bookshelf-auther,
+.recent-auther,
+.fav-books-auther,
+.fav-books-view,
+.my-shelf-diS {
+  color: rgb(242, 180, 64);
+}
+.logo img,
+.endimg {
+  filter: brightness(0) invert(1);
+}
+.bookshelf-choices div,
+.bookshelf-title,
+.my-bookshelf-text,
+.bookshelf-title,
+.recently-viewd-text,
+.recent-title,
+.fav-books-title,
+.fav-books-text,
+.my-shelf {
+  color: white;
+}

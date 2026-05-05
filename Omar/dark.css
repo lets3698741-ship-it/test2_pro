@@ -1,0 +1,46 @@
+body {
+  background-color: #383840;
+}
+.head {
+  background-color: #383840;
+}
+.foot {
+  background-color: #383840;
+}
+.left p {
+  color: #d99544;
+}
+.search hr {
+  height: 30px;
+  width: 1px;
+  background: white;
+  border: none;
+}
+.links a {
+  text-decoration: none;
+  color: white;
+  white-space: nowrap;
+}
+.right a {
+  text-decoration: none;
+  color: white;
+}
+.order {
+  background-color: #595856;
+}
+.book1,
+.book2 {
+  background-color: #595856;
+  border-radius: 20px;
+}
+.yourcart {
+  color: white;
+  font-family: "Newsreader", serif;
+}
+.pp {
+  color: #d4ad6c;
+}
+.logo img,
+.endimg {
+  filter: brightness(0) invert(1);
+}

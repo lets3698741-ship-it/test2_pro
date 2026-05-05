@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id="theme-style" rel="stylesheet" href="style.css" />
+    <title>Create Account | Your Library</title>
+  </head>
+  <body class="account-page">
+    <header class="head">
+      <a class="logo" href="../Yo/index.html" aria-label="Your Library home">
+        <img src="YOUR LIBRARY.svg" alt="Your Library" />
+      </a>
+
+      <nav class="links" aria-label="Main navigation">
+        <a href="../index.html" class="act">Home</a>
+        <a href="../EZZ/Explore.html">Explore</a>
+        <a href="../El-bara/myshelf.html">My Shelf</a>
+        <a href="../AD-co/Contact.html">Contact Us</a>
+        <a href="../Z/about.html">About Us</a>
+      </nav>
+
+      <div class="search">
+        <div class="li" aria-label="Theme switcher">
+          <button
+            class="theme-btn"
+            type="button"
+            data-theme="light"
+            aria-label="Light theme"
+          >
+            <img src="sun-alt-svgrepo-com.svg" alt="" />
+          </button>
+          <button
+            class="theme-btn"
+            type="button"
+            data-theme="dark"
+            aria-label="Dark theme"
+          >
+            <img src="moon-svgrepo-com.svg" alt="" />
+          </button>
+        </div>
+        <span class="divider" aria-hidden="true"></span>
+        <div class="ri">
+          <a href="#" aria-label="Cart"
+            ><img src="cart-svgrepo-com (2).svg" alt=""
+          /></a>
+          <a href="#" aria-label="Search"
+            ><img src="search-svgrepo-com.svg" alt=""
+          /></a>
+          <a href="sign-in.html" aria-label="Profile"
+            ><img src="profile-1341-svgrepo-com.svg" alt=""
+          /></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="account-main">
+      <section class="account-visual" aria-label="Library preview"></section>
+
+      <section class="account-panel" aria-labelledby="signup-title">
+        <h1 id="signup-title">Create Your Account</h1>
+        <p>
+          Join our community of bibliophiles and start your literary journey
+          today.
+        </p>
+
+        <form class="account-form" action="#" method="post">
+          <label for="full-name">Full Name</label>
+          <input
+            id="full-name"
+            name="full-name"
+            type="text"
+            placeholder="Enter your full name"
+            autocomplete="name"
+            required
+          />
+
+          <label for="email">Email Address</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="example@library.com"
+            autocomplete="email"
+            required
+          />
+
+          <label for="password">Password</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            placeholder="********"
+            autocomplete="new-password"
+            required
+          />
+
+          <label class="check-row" for="terms">
+            <input id="terms" name="terms" type="checkbox" required />
+            <span
+              >I agree to the <a href="#">Terms of Service</a> and
+              <a href="#">Privacy Policy</a>.</span
+            >
+          </label>
+
+          <button class="primary-btn account-submit" type="submit">
+            Sign Up
+          </button>
+
+          <div class="or-line"><span>Or continue with</span></div>
+
+          <button class="google-btn" type="button">
+            <span>G</span>
+            Google
+          </button>
+        </form>
+
+        <p class="account-switch">
+          Already have an account? <a href="sign-in.html">Log in</a>
+        </p>
+      </section>
+    </main>
+
+    <hr class="c" />
+    <footer class="foot">
+      <div class="left">
+        <img src="YOUR LIBRARY.svg" alt="Your Library" />
+        <p>&copy; 2024 Your Library. All rights reserved.</p>
+      </div>
+      <div class="right">
+        <a href="#">Institutional info</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="../AD-co/Contact.html">Contact Us</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

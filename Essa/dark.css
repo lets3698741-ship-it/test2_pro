@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500;6..72,600;6..72,700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    background-color: #383840;
+}
+
+.head {
+    background-color: white;
+}
+
+.foot {
+    background-color: white;
+}
+
+
+/* account dar */
+body.account-page {
+    --bg: #27262a;
+    --surface: #f4f0ea;
+    --text: #f4eee7;
+    --heading: #f5f0eb;
+    --soft-color: #d1c8bf;
+    --label: #f1e8df;
+    --line: rgba(244, 238, 231, 0.22);
+    --soft-line: rgba(244, 238, 231, 0.16);
+    --main-color: #df9a3f;
+    --main-dark: #c47d32;
+    --input-bg: #ffffff;
+    --input-text: #26231f;
+    --input-border: #ffffff;
+    --button-border: #f2eee9;
+    --toggle-bg: #8b8881;
+    --glass: rgba(255, 255, 255, 0.08);
+    --preview-light: #575263;
+    --preview-dark: #121214;
+    --account-visual-top: #403b47;
+    --account-visual-bottom: #0f0f11;
+    --footer-text: #f4eee7;
+    --shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+}
+
+/* الصور تبقى بيضاء   */
+body.account-page .logo img,
+body.account-page .left img,
+body.account-page .ri img {
+    filter: brightness(0) invert(1);
+}
+
+body.account-page .theme-btn img {
+    filter: brightness(0) invert(1);
+}
+
+body.account-page * {
+    box-sizing: border-box;
+}
+
+body.account-page {
+    scroll-behavior: smooth;
+    min-height: 100vh;
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+body.account-page img {
+    display: block;
+    max-width: 100%;
+}
+
+body.account-page a {
+    color: inherit;
+}
+
+body.account-page .head {
+    width: 100%;
+    min-height: 112px;
+    padding: 24px 64px;
+    margin-bottom: 0;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    font-family: "Newsreader", serif;
+}
+
+body.account-page .logo {
+    width: 112px;
+    flex: 0 0 auto;
+    overflow: visible;
+    padding-bottom: 0;
+}
+
+body.account-page .logo img {
+    width: 100%;
+    height: auto;
+    padding-top: 0;
+}
+
+body.account-page .links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+body.account-page .links a {
+    text-decoration: none;
+    color: var(--soft-color);
+    white-space: nowrap;
+    transition: color 0.2s ease;
+}
+
+body.account-page .links a:hover,
+body.account-page .links .act {
+    color: var(--main-color);
+}
+
+body.account-page .search,
+body.account-page .li,
+body.account-page .ri {
+    display: flex;
+    align-items: center;
+}
+
+body.account-page .search {
+    flex: 0 0 auto;
+    gap: 18px;
+}
+
+body.account-page .li {
+    gap: 15px;
+}
+
+body.account-page .theme-btn {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+
+body.account-page .theme-btn.active {
+    background: transparent;
+}
+
+body.account-page .theme-btn img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+body.account-page .ri {
+    gap: 18px;
+}
+
+body.account-page .ri img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+body.account-page .divider {
+    width: 1px;
+    height: 32px;
+    background: var(--line);
+}
+
+body.account-page .home-main {
+    width: 1180px;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 36px 0 80px;
+}
+
+body.account-page .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+    min-height: 560px;
+}
+
+body.account-page .eyebrow {
+    margin: 0 0 14px;
+    color: var(--main-color);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+body.account-page .hero h1,
+body.account-page .account-panel h1 {
+    margin: 0;
+    font-family: "Newsreader", serif;
+    font-weight: 700;
+    line-height: 1.03;
+    color: var(--heading);
+}
+
+body.account-page .hero h1 {
+    max-width: 660px;
+    font-size: 92px;
+}
+
+body.account-page .lead {
+    max-width: 600px;
+    margin: 22px 0 0;
+    color: var(--soft-color);
+    font-size: 22px;
+    line-height: 1.55;
+}
+
+body.account-page .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 32px;
+}
+
+/* ===== buttons ===== */
+body.account-page .primary-btn,
+body.account-page .secondary-btn,
+body.account-page .google-btn {
+    min-height: 48px;
+    padding: 0 28px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+body.account-page .primary-btn {
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
+    color: #ffffff;
+}
+
+body.account-page .secondary-btn,
+body.account-page .google-btn {
+    border: 1px solid var(--button-border);
+    background: transparent;
+    color: var(--text);
+}
+
+body.account-page .primary-btn:hover,
+body.account-page .secondary-btn:hover,
+body.account-page .google-btn:hover {
+    transform: translateY(-1px);
+}
+
+body.account-page .primary-btn:hover {
+    background: var(--main-dark);
+    border-color: var(--main-dark);
+}
+
+body.account-page .book-preview {
+    min-height: 470px;
+    padding: 40px;
+    border-radius: 8px;
+    background:
+        linear-gradient(145deg, rgba(255, 255, 255, 0.18), transparent 42%),
+        linear-gradient(160deg, var(--preview-light), var(--preview-dark));
+    box-shadow: var(--shadow);
+    display: grid;
+    align-content: end;
+    gap: 18px;
+}
+
+body.account-page .book-preview article,
+body.account-page .feature-grid article {
+    border: 1px solid var(--soft-line);
+    background: var(--glass);
+    border-radius: 8px;
+    padding: 22px;
+}
+
+body.account-page .book-preview span {
+    color: var(--main-color);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+body.account-page .book-preview h2,
+body.account-page .feature-grid h2 {
+    margin: 8px 0;
+    font-family: "Newsreader", serif;
+    color: var(--heading);
+}
+
+body.account-page .book-preview p,
+body.account-page .feature-grid p {
+    margin: 0;
+    color: var(--soft-color);
+    line-height: 1.6;
+}
+
+body.account-page .feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px;
+    margin-top: 42px;
+}
+
+body.account-page .account-main {
+    width: 1040px;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 32px 0 96px;
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    align-items: start;
+    gap: 88px;
+    flex: 1;
+}
+
+body.account-page .account-visual {
+    min-height: 560px;
+    border-radius: 8px;
+    background:
+        radial-gradient(circle at 25% 15%, rgba(255, 255, 255, 0.2), transparent 26%),
+        linear-gradient(165deg, var(--account-visual-top), var(--account-visual-bottom));
+    box-shadow: var(--shadow);
+}
+
+body.account-page .account-panel h1 {
+    font-size: 52px;
+}
+
+body.account-page .account-panel > p {
+    margin: 12px 0 34px;
+    color: var(--soft-color);
+    font-size: 17px;
+    line-height: 1.45;
+}
+
+/* ===== Form ===== */
+body.account-page .account-form {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+body.account-page .account-form label:not(.check-row) {
+    color: var(--label);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+body.account-page .account-form input[type="text"],
+body.account-page .account-form input[type="email"],
+body.account-page .account-form input[type="password"] {
+    width: 100%;
+    min-height: 46px;
+    padding: 0 14px;
+    border: 1px solid var(--input-border);
+    background: var(--input-bg);
+    color: var(--input-text);
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    outline: none;
+}
+
+body.account-page .account-form input:focus {
+    border-color: var(--main-color);
+    box-shadow: 0 0 0 3px rgba(223, 154, 63, 0.18);
+}
+
+body.account-page .check-row {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin: 8px 0 6px;
+    color: var(--soft-color);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+body.account-page .check-row.compact {
+    margin: 0;
+}
+
+body.account-page .check-row input {
+    flex: 0 0 auto;
+    accent-color: var(--main-color);
+}
+
+body.account-page .check-row a,
+body.account-page .account-switch a,
+body.account-page .form-row a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+body.account-page .account-submit,
+body.account-page .google-btn {
+    width: 100%;
+}
+
+body.account-page .or-line {
+    position: relative;
+    margin: 22px 0 8px;
+    color: var(--soft-color);
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+body.account-page .or-line::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--line);
+}
+
+body.account-page .or-line span {
+    position: relative;
+    padding: 0 12px;
+    background: var(--bg);
+}
+
+body.account-page .google-btn {
+    min-height: 48px;
+}
+
+body.account-page .google-btn span {
+    font-size: 18px;
+    line-height: 1;
+}
+
+body.account-page .account-switch {
+    margin: 24px 0 0;
+    color: var(--soft-color);
+    font-size: 12px;
+    text-align: center;
+}
+
+body.account-page .form-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    color: var(--soft-color);
+    font-size: 12px;
+    margin: 6px 0 8px;
+}
+
+body.account-page .c {
+    width: calc(100% - 128px);
+    margin: auto auto 0;
+    border: 0;
+    border-top: 1px solid var(--line);
+}
+
+body.account-page .foot {
+    width: 100%;
+    padding: 28px 64px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+body.account-page .left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+body.account-page .left img {
+    width: 112px;
+}
+
+body.account-page .left p {
+    margin: 0;
+    color: var(--footer-text);
+    font-size: 12px;
+}
+
+body.account-page .right {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+body.account-page .right a {
+    color: var(--soft-color);
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* =====  pop up  ===== */
+body.account-page .popup-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.58);
+    display: grid;
+    place-items: center;
+}
+
+body.account-page .popup-box {
+    width: 360px;
+    max-width: 100%;
+    padding: 28px;
+    border: 1px solid var(--soft-line);
+    border-radius: 8px;
+    background: var(--bg);
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+body.account-page .popup-box p {
+    margin: 0 0 20px;
+    color: var(--text);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body.account-page .popup-btn {
+    width: 100%;
+}
+
+/* ===== Responsive===== */
+@media (max-width: 980px) {
+    body.account-page .theme-btn,
+    body.account-page .theme-btn img { width: 25px; height: 25px; }
+    body.account-page .head { flex-wrap: wrap; justify-content: center; padding: 24px 30px; }
+    body.account-page .logo { order: 1; }
+    body.account-page .search { order: 2; margin-left: auto; }
+    body.account-page .links { order: 3; flex-basis: 100%; flex-wrap: wrap; }
+    body.account-page .hero,
+    body.account-page .account-main { grid-template-columns: 1fr; }
+    body.account-page .hero { min-height: auto; gap: 40px; }
+    body.account-page .hero h1 { font-size: 64px; }
+    body.account-page .lead { font-size: 18px; }
+    body.account-page .account-main { width: 680px; max-width: calc(100% - 40px); padding-top: 18px; gap: 40px; }
+    body.account-page .account-visual { min-height: 340px; }
+    body.account-page .feature-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+    body.account-page .head { min-height: auto; padding: 20px; gap: 18px; }
+    body.account-page .logo { width: 96px; }
+    body.account-page .search { width: 100%; justify-content: center; margin-left: 0; order: 3; }
+    body.account-page .links { order: 2; gap: 13px 18px; font-size: 15px; }
+    body.account-page .home-main,
+    body.account-page .account-main { width: calc(100% - 28px); max-width: 680px; }
+    body.account-page .home-main { padding-top: 22px; }
+    body.account-page .hero h1 { font-size: 48px; }
+    body.account-page .lead { font-size: 16px; }
+    body.account-page .hero-actions,
+    body.account-page .form-row { flex-direction: column; align-items: stretch; }
+    body.account-page .primary-btn,
+    body.account-page .secondary-btn { width: 100%; }
+    body.account-page .book-preview,
+    body.account-page .account-visual { min-height: 300px; }
+    body.account-page .account-panel h1 { font-size: 36px; }
+    body.account-page .foot { flex-direction: column; text-align: center; }
+    body.account-page .left { align-items: center; }
+    body.account-page .right { justify-content: center; gap: 12px 18px; }
+}

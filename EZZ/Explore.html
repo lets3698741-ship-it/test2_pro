@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="master.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link id="theme-style" rel="stylesheet" href="light.css" />
+
+    <title>YourLibrary | Explore</title>
+  </head>
+  <body>
+    <header class="head">
+      <a href="../Yo/index.html" class="logo"
+        ><img src="../const/YOUR LIBRARY.svg" alt=""
+      /></a>
+      <div class="links">
+        <a href="../index.html" class="act">Home</a>
+        <a href="#">Explore</a>
+        <a href="../El-bara/myshelf.html">My Shelf</a>
+        <a href="../AD-co/Contact.html">Contact Us</a>
+        <a href="../Z/about.html">About Us</a>
+      </div>
+      <div class="search">
+        <div class="li">
+          <a
+            class="whitemode"
+            href="#"
+            onclick="
+              setTheme('light');
+              return false;
+            "
+            ><img class="icon0" src="../const/sun-alt-svgrepo-com.svg" alt=""
+          /></a>
+          <a
+            class="darkmode"
+            href="#"
+            onclick="
+              setTheme('dark');
+              return false;
+            "
+            ><img class="icon1" src="../const/moon-svgrepo-com.svg" alt=""
+          /></a>
+        </div>
+        <hr />
+        <div class="ri">
+          <a href="../Omar/cart.html"
+            ><img class="icon2" src="../const/cart-svgrepo-com (2).svg" alt=""
+          /></a>
+
+          <a href="../Essa/sign-in.html"
+            ><img
+              class="icon3"
+              src="../const/profile-1341-svgrepo-com.svg"
+              alt=""
+          /></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main">
+        <div class="type">
+          <h4>TYPE</h4>
+          <div>
+            <input type="checkbox" value="Novel" id="Novel" />
+            <label for="Novel">Novel</label>
+          </div>
+          <div>
+            <input type="checkbox" value="Books" id="Books" />
+            <label for="Books">Books</label>
+          </div>
+          <div>
+            <input type="checkbox" value="Audio Books" id="Audio Books" />
+            <label for="Audio Books">Audio Books</label>
+          </div>
+        </div>
+
+        <div class="genre">
+          <h4>GENRE</h4>
+          <div>
+            <input type="checkbox" value="classical" id="classical" />
+            <label for="classical">Classical</label>
+          </div>
+          <div>
+            <input type="checkbox" value="philosophy" id="philosophy" />
+            <label for="philosophy">Philosophy</label>
+          </div>
+          <div>
+            <input type="checkbox" value="historical" id="historical" />
+            <label for="historical">Historical</label>
+          </div>
+          <div>
+            <input type="checkbox" value="poetry" id="poetry" />
+            <label for="poetry">Poetry</label>
+          </div>
+        </div>
+        <hr class="h" />
+      </div>
+      <hr class="r" />
+
+      <div class="main-center">
+        <h3>Explore the Stacks</h3>
+        <p>The journey of a thousand miles begins with a single page</p>
+
+        <div class="content">
+          <div class="container">
+            <ul data-type="Novel" data-genre="classical" data-id="1">
+              <div class="all">
+                <div class="first">
+                  <img src="image.png" class="card" />
+                  <h5>Letters to Lucilius</h5>
+                  <p>Lucius Annaeus Seneca</p>
+                  <a href="../AD-M/Books.html">View Details</a>
+                </div>
+                <div class="second">
+                  <div class="star">
+                    <img src="Container.svg" />
+                    <span>4.8</span>
+                  </div>
+                </div>
+                <div class="third">
+                  <div>
+                    <img src="Button.svg" class="fav-btn" />
+                  </div>
+                </div>
+              </div>
+            </ul>
+            <ul data-type="Novel" data-genre="philosophy" data-id="2">
+              <div class="all">
+                <div class="first">
+                  <img src="image.png" class="card" />
+                  <h5>Letters to Lucilius</h5>
+                  <p>Lucius Annaeus Seneca</p>
+                  <a href="../AD-M/Books.html">View Details</a>
+                </div>
+                <div class="second">
+                  <div class="star">
+                    <img src="Container.svg" />
+                    <span>4.8</span>
+                  </div>
+                </div>
+                <div class="third">
+                  <div>
+                    <img src="Button.svg" class="fav-btn" />
+                  </div>
+                </div>
+              </div>
+            </ul>
+            <ul data-type="Novel" data-genre="historical" data-id="3">
+              <div class="all">
+                <div class="first">
+                  <img src="image.png" class="card" />
+                  <h5>Letters to Lucilius</h5>
+                  <p>Lucius Annaeus Seneca</p>
+                  <a href="../AD-M/Books.html">View Details</a>
+                </div>
+                <div class="second">
+                  <div class="star">
+                    <img src="Container.svg" />
+                    <span>4.8</span>
+                  </div>
+                </div>
+                <div class="third">
+                  <div>
+                    <img src="Button.svg" class="fav-btn" />
+                  </div>
+                </div>
+              </div>
+            </ul>
+            <ul data-type="Novel" data-genre="poetry" data-id="4">
+              <div class="all">
+                <div class="first">
+                  <img src="image.png" class="card" />
+                  <h5>Letters to Lucilius</h5>
+                  <p>Lucius Annaeus Seneca</p>
+                  <a href="../AD-M/Books.html">View Details</a>
+                </div>
+                <div class="second">
+                  <div class="star">
+                    <img src="Container.svg" />
+                    <span>4.8</span>
+                  </div>
+                </div>
+                <div class="third">
+                  <div>
+                    <img src="Button.svg" class="fav-btn" />
+                  </div>
+                </div>
+              </div>
+            </ul>
+            <ul data-type="Books" data-genre="classical" data-id="5">
+              <div class="all">
+                <div class="first">
+                  <img src="image.png" class="card" />
+                  <h5>Letters to Lucilius</h5>
+                  <p>Lucius Annaeus Seneca</p>
+                  <a href="../AD-M/Books.html">View Details</a>
+                </div>
+                <div class="second">
+                  <div class="star">
+                    <img src="Container.svg" />
+                    <span>4.8</span>
+                  </div>
+                </div>
+                <div class="third">
+                  <div>
+                    <img src="Button.svg" class="fav-btn" />
+                  </div>
+                </div>
+              </div>
+            </ul>
+            <ul data-type="Books" data-genre="philosophy" data-id="6">
+              <div class="all">
+                <div class="first">
+                  <img src="image.png" class="card" />
+                  <h5>Letters to Lucilius</h5>
+                  <p>Lucius Annaeus Seneca</p>
+                  <a href="../AD-M/Books.html">View Details</a>
+                </div>
+                <div class="second">
+                  <div class="star">
+                    <img src="Container.svg" />
+                    <span>4.8</span>
+                  </div>
+                </div>
+                <div class="third">
+                  <div>
+                    <img src="Button.svg" class="fav-btn" />
+                  </div>
+                </div>
+              </div>
+            </ul>
+            <ul data-type="Books" data-genre="historical" data-id="7">
+              <div class="all">
+                <div class="first">
+                  <img src="image.png" class="card" />
+                  <h5>Letters to Lucilius</h5>
+                  <p>Lucius Annaeus Seneca</p>
+                  <a href="../AD-M/Books.html">View Details</a>
+                </div>
+                <div class="second">
+                  <div class="star">
+                    <img src="Container.svg" />
+                    <span>4.8</span>
+                  </div>
+                </div>
+                <div class="third">
+                  <div>
+                    <img src="Button.svg" class="fav-btn" />
+                  </div>
+                </div>
+              </div>
+            </ul>
+            <ul data-type="Books" data-genre="poetry" data-id="8">
+              <div class="all">
+                <div class="first">
+                  <img src="image.png" class="card" />
+                  <h5>Letters to Lucilius</h5>
+                  <p>Lucius Annaeus Seneca</p>
+                  <a href="../AD-M/Books.html">View Details</a>
+                </div>
+                <div class="second">
+                  <div class="star">
+                    <img src="Container.svg" />
+                    <span>4.8</span>
+                  </div>
+                </div>
+                <div class="third">
+                  <div>
+                    <img src="Button.svg" class="fav-btn" />
+                  </div>
+                </div>
+              </div>
+            </ul>
+            <ul data-type="Audio Books" data-genre="classical" data-id="9">
+              <div class="all">
+                <div class="first">
+                  <img src="image.png" class="card" />
+                  <h5>Letters to Lucilius</h5>
+                  <p>Lucius Annaeus Seneca</p>
+                  <a href="../AD-M/Books.html">View Details</a>
+                </div>
+                <div class="second">
+                  <div class="star">
+                    <img src="Container.svg" />
+                    <span>4.8</span>
+                  </div>
+                </div>
+                <div class="third">
+                  <div>
+                    <img src="Button.svg" class="fav-btn" />
+                  </div>
+                </div>
+              </div>
+            </ul>
+            <ul data-type="Audio Books" data-genre="philosophy" data-id="10">
+              <div class="all">
+                <div class="first">
+                  <img src="image.png" class="card" />
+                  <h5>Letters to Lucilius</h5>
+                  <p>Lucius Annaeus Seneca</p>
+                  <a href="../AD-M/Books.html">View Details</a>
+                </div>
+                <div class="second">
+                  <div class="star">
+                    <img src="Container.svg" />
+                    <span>4.8</span>
+                  </div>
+                </div>
+                <div class="third">
+                  <div>
+                    <img src="Button.svg" class="fav-btn" />
+                  </div>
+                </div>
+              </div>
+            </ul>
+            <ul data-type="Audio Books" data-genre="historical" data-id="11">
+              <div class="all">
+                <div class="first">
+                  <img src="image.png" class="card" />
+                  <h5>Letters to Lucilius</h5>
+                  <p>Lucius Annaeus Seneca</p>
+                  <a href="../AD-M/Books.html">View Details</a>
+                </div>
+                <div class="second">
+                  <div class="star">
+                    <img src="Container.svg" />
+                    <span>4.8</span>
+                  </div>
+                </div>
+                <div class="third">
+                  <div>
+                    <img src="Button.svg" class="fav-btn" />
+                  </div>
+                </div>
+              </div>
+            </ul>
+            <ul data-type="Audio Books" data-genre="poetry" data-id="12">
+              <div class="all">
+                <div class="first">
+                  <img src="image.png" class="card" />
+                  <h5>Letters to Lucilius</h5>
+                  <p>Lucius Annaeus Seneca</p>
+                  <a href="../AD-M/Books.html">View Details</a>
+                </div>
+                <div class="second">
+                  <div class="star">
+                    <img src="Container.svg" />
+                    <span>4.8</span>
+                  </div>
+                </div>
+                <div class="third">
+                  <div>
+                    <img src="Button.svg" class="fav-btn" />
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <hr class="c" />
+
+    <footer class="foot">
+      <div class="left">
+        <img class="endimg" src="../const/YOUR LIBRARY.svg" alt="" />
+        <p>© 2024 The Living Library.All rights reserved.</p>
+      </div>
+      <div class="right">
+        <a href="#">Institutional info</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of service</a>
+        <a href="../AD-co/Contact.html">Contact Us</a>
+      </div>
+    </footer>
+    <script src="../script1.js"></script>
+
+    <script>
+      function setTheme(theme) {
+        let cssFile = document.getElementById("theme-style");
+
+        if (theme === "light") {
+          cssFile.href = "light.css";
+        } else {
+          cssFile.href = "dark.css";
+        }
+
+        /* save user's choice */
+        localStorage.setItem("theme", theme);
+      }
+
+      /* load saved theme when page opens */
+      window.onload = function () {
+        let savedTheme = localStorage.getItem("theme");
+
+        if (savedTheme) {
+          document.getElementById("theme-style").href = savedTheme + ".css";
+        }
+      };
+    </script>
+
+    <script>
+      const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+      const items = document.querySelectorAll(".container ul");
+
+      checkboxes.forEach((cb) => {
+        cb.addEventListener("change", filterItems);
+      });
+
+      function filterItems() {
+        let selectedTypes = [];
+        let selectedGenres = [];
+
+        document.querySelectorAll(".type input:checked").forEach((el) => {
+          selectedTypes.push(el.value);
+        });
+
+        document.querySelectorAll(".genre input:checked").forEach((el) => {
+          selectedGenres.push(el.value);
+        });
+
+        items.forEach((item) => {
+          let itemType = item.getAttribute("data-type");
+          let itemGenre = item.getAttribute("data-genre");
+
+          let showType =
+            selectedTypes.length === 0 || selectedTypes.includes(itemType);
+          let showGenre =
+            selectedGenres.length === 0 || selectedGenres.includes(itemGenre);
+
+          item.style.display = showType && showGenre ? "block" : "none";
+        });
+      }
+      const favButtons = document.querySelectorAll(".fav-btn");
+
+      favButtons.forEach((btn) => {
+        btn.addEventListener("click", function () {
+          const item = btn.closest("ul");
+
+          const book = {
+            id: item.getAttribute("data-id"),
+            title: item.querySelector("h5").innerText,
+            author: item.querySelector("p").innerText,
+            image: item.querySelector("img.card").src,
+          };
+
+          let shelf = JSON.parse(localStorage.getItem("shelf")) || [];
+
+          let index = shelf.findIndex((b) => b.id === book.id);
+
+          if (index === -1) {
+            shelf.push(book);
+            btn.classList.add("active");
+          } else {
+            shelf.splice(index, 1);
+            btn.classList.remove("active");
+          }
+
+          localStorage.setItem("shelf", JSON.stringify(shelf));
+        });
+      });
+
+      window.addEventListener("load", () => {
+        let shelf = JSON.parse(localStorage.getItem("shelf")) || [];
+
+        document.querySelectorAll(".fav-btn").forEach((btn) => {
+          const item = btn.closest("ul");
+          const id = item.getAttribute("data-id");
+
+          if (shelf.find((b) => b.id === id)) {
+            btn.classList.add("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

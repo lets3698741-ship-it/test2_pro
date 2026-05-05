@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact US | Your Library</title>
+    <link rel="stylesheet" href="Contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link id="theme-style" rel="stylesheet" href="light.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "AFUpk0Oq7wWt8QlJs",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <header class="head">
+      <a href="../Yo/index.html" class="logo"
+        ><img src="../const/YOUR LIBRARY.svg" alt=""
+      /></a>
+
+      <div class="links">
+        <a href="../index.html" class="act">Home</a>
+        <a href="../EZZ/Explore.html">Explore</a>
+        <a href="../El-bara/myshelf.html">My Shelf</a>
+        <a href="#">Contact Us</a>
+        <a href="../Z/about.html">About Us</a>
+      </div>
+      <div class="search">
+        <div class="li">
+          <a
+            class="whitemode"
+            href="#"
+            onclick="
+              setTheme('light');
+              return false;
+            "
+            ><img class="icon0" src="../const/sun-alt-svgrepo-com.svg" alt=""
+          /></a>
+          <a
+            class="darkmode"
+            href="#"
+            onclick="
+              setTheme('dark');
+              return false;
+            "
+            ><img class="icon1" src="../const/moon-svgrepo-com.svg" alt=""
+          /></a>
+        </div>
+        <hr />
+        <div class="ri">
+          <a href="../Omar/cart.html"
+            ><img class="icon2" src="../const/cart-svgrepo-com (2).svg" alt=""
+          /></a>
+          <a href="../Essa/sign-in.html"
+            ><img
+              class="icon3"
+              src="../const/profile-1341-svgrepo-com.svg"
+              alt=""
+          /></a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="SC1">
+        <h3>Get in Touch</h3>
+        <p class="p10">
+          We'd love to hear from you. Whether you have a question about a
+          rare<br />
+          edition, need reading recommendations, or simply want to say hello,
+          our<br />
+          booksellers are here.
+        </p>
+      </section>
+      <!--end section one -->
+      <div class="row">
+        <section class="SC2">
+          <p>Send a Message</p>
+          <form class="Form">
+            <label for="name">NAME</label>
+            <input type="text" placeholder="Your full name" id="name" />
+            <span class="Error_name"></span><br />
+            <label for="email">EMAIL</label>
+            <input type="email" placeholder="Your email address" id="email" />
+            <span class="Error_email"></span><br />
+            <label for="subject">SUBJECT</label>
+            <input
+              type="text"
+              placeholder="What is this regarding ?"
+              id="subject"
+              name="subject"
+            />
+            <span class="Error_subject"></span><br />
+            <label for="message">MESSAGE</label>
+            <textarea
+              id="message"
+              placeholder="write your message"
+              maxlength="300"
+              minlength="10"
+            ></textarea>
+            <span class="Error_message"></span><br />
+          </form>
+          <button class="subnitC">
+            submit <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </section>
+        <!--end section two -->
+        <section class="SC3">
+          <h5>More Of Us</h5>
+          <p>
+            We are everywhere, Get Closer to us by following our socials or just
+            give us a call :)
+          </p>
+          <div class="phaE">
+            <p>HOTLINE</p>
+            <p>
+              <a href="#"> +20 1017778837 </a>
+            </p>
+            <p>EMAIL</p>
+            <p>
+              <a href="#"> hello@gmail.com </a>
+            </p>
+            <p>SOCIALS</p>
+            <div class="Socials">
+              <!-- 3 links -->
+              <a href="#">
+                <!-- <p>facebook</p> -->
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="#">
+                <!-- <p>whatsApp</p> -->
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="#">
+                <!-- <p>instagram</p> -->
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!--end section three -->
+      </div>
+    </main>
+    <hr class="c" />
+    <!--end main-->
+    <footer class="foot">
+      <div class="left">
+        <img class="endimg" src="../const/YOUR LIBRARY.svg" alt="" />
+        <p>© 2024 The Living Library.All rights reserved.</p>
+      </div>
+      <div class="right">
+        <a href="#">Institutional info</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of service</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+      function setTheme(theme) {
+        let cssFile = document.getElementById("theme-style");
+
+        if (theme === "light") {
+          cssFile.href = "light.css";
+        } else {
+          cssFile.href = "dark.css";
+        }
+
+        /* save user's choice */
+        localStorage.setItem("theme", theme);
+      }
+
+      /* load saved theme when page opens */
+      window.onload = function () {
+        let savedTheme = localStorage.getItem("theme");
+
+        if (savedTheme) {
+          document.getElementById("theme-style").href = savedTheme + ".css";
+        }
+      };
+    </script>
+    <script src="../script1.js"></script>
+  </body>
+</html>

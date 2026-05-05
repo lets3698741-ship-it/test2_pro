@@ -1,0 +1,178 @@
+body {
+  background-color: #383840;
+}
+.head {
+  background-color: #383840;
+}
+.foot {
+  background-color: #383840;
+}
+.left p {
+  color: #d99544;
+}
+.search hr {
+  height: 30px;
+  width: 1px;
+  background: white;
+  border: none;
+}
+.links a {
+  text-decoration: none;
+  color: white;
+  white-space: nowrap;
+}
+.right a {
+  text-decoration: none;
+  color: white;
+}
+.c {
+  width: calc(100% - 128px);
+  margin: auto;
+}
+
+/* ================= BACKGROUND ================= */
+
+.links .act,
+.links a:hover,
+.right a:hover {
+  color: #d99544;
+}
+
+/* ================= ICONS ================= */
+.search a img {
+  filter: brightness(0) invert(1);
+  opacity: 0.85;
+}
+
+.search a img:hover {
+  opacity: 1;
+}
+
+/* DIVIDER */
+.search hr {
+  background: #6a6972;
+}
+
+/* ================= BOOK SECTION ================= */
+.book-info h1 {
+  color: #ffffff;
+}
+
+.author {
+  color: #bfbfbf;
+}
+
+.rating {
+  color: #bfbfbf;
+}
+
+.tags span {
+  background: #3b3a42;
+  color: #e0e0e0;
+  border: 1px solid #5a5963;
+}
+
+.description {
+  color: #cfcfcf;
+}
+
+.book-meta .label {
+  color: #9a9a9a;
+}
+
+.book-meta .value {
+  color: #e6e6e6;
+}
+
+/* ================= BUTTONS ================= */
+.buttons button {
+  background: transparent;
+  color: #e6e6e6;
+  border: 1px solid #6a6972;
+  border-radius: 10px;
+}
+
+.buttons button:hover {
+  background: #d99544;
+  color: #fff;
+  border-color: #d99544;
+}
+
+/* ICON BUTTON */
+.icon-btn {
+  background: transparent;
+  border: 1px solid #6a6972;
+}
+
+/* ================= AUTHOR SECTION ================= */
+.author-section {
+  background: #3b3a42;
+  border: 1px solid #6a6972;
+  border-radius: 14px;
+}
+
+.author-img {
+  background: #5a5963;
+}
+
+.author-label {
+  color: #9a9a9a;
+}
+
+.author-info p {
+  color: #cfcfcf;
+}
+
+/* ================= NEW ARRIVALS ================= */
+.new-arrivals h2 {
+  color: #ffffff;
+}
+
+/* ================= CARDS ================= */
+.card {
+  background: #3b3a42;
+  /* نفس لون author section */
+  border: 1px solid #6a6972;
+  border-radius: 12px;
+  color: #e6e6e6;
+  transition: all 0.3s ease;
+}
+
+.card img {
+  border-radius: 6px;
+}
+
+.card h4 {
+  color: #ffffff;
+}
+
+.card p {
+  color: #bfbfbf;
+}
+
+.card a {
+  color: #d99544;
+}
+.logo img,
+.endimg {
+  filter: brightness(0) invert(1);
+}
+/* CARD BUTTON */
+.view button {
+  border: 1px solid #6a6972;
+  color: #e6e6e6;
+  background: transparent;
+}
+
+.view button:hover {
+  background: #d99544;
+  border-color: #d99544;
+  color: #fff;
+}
+
+/* HOVER EFFECT */
+.card:hover {
+  transform: translateY(-6px);
+  border-color: #d99544;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
